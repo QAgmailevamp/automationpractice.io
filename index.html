@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Automation Practice Site</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Automation Practice Website</h1>
+    <nav>
+      <ul>
+        <li><a href="#home" class="tab-link" onclick="showTab('home')">Home</a></li>
+        <li><a href="#forms" class="tab-link" onclick="showTab('forms')">Forms</a></li>
+        <li><a href="#tables" class="tab-link" onclick="showTab('tables')">Tables</a></li>
+        <li><a href="#buttons" class="tab-link" onclick="showTab('buttons')">Buttons</a></li>
+        <li><a href="#dropdowns" class="tab-link" onclick="showTab('dropdowns')">Dropdowns</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Home Tab -->
+    <section id="home" class="tab-content active">
+      <h2>Welcome to the Automation Practice Website</h2>
+      <p>This site contains various elements for practicing Selenium web automation.</p>
+    </section>
+
+    <!-- Forms Tab -->
+    <section id="forms" class="tab-content">
+      <h2>Forms</h2>
+      <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username">
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+        <br>
+        <input type="checkbox" id="subscribe" name="subscribe">
+        <label for="subscribe">Subscribe to our newsletter</label>
+        <br>
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+
+    <!-- Tables Tab -->
+    <section id="tables" class="tab-content">
+      <h2>Tables</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>John Doe</td>
+            <td>john.doe@example.com</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Jane Smith</td>
+            <td>jane.smith@example.com</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Bob Johnson</td>
+            <td>bob.johnson@example.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Buttons Tab -->
+    <section id="buttons" class="tab-content">
+      <h2>Buttons</h2>
+      <button onclick="alert('Button 1 clicked!')">Button 1</button>
+      <button onclick="alert('Button 2 clicked!')">Button 2</button>
+      <button onclick="changeText()">Change Text</button>
+      <p id="text">This is a sample text.</p>
+    </section>
+
+    <!-- Dropdowns Tab -->
+    <section id="dropdowns" class="tab-content">
+      <h2>Dropdowns</h2>
+      <label for="cars">Choose a car:</label>
+      <select id="cars" name="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </select>
+    </section>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
