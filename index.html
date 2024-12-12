@@ -25,6 +25,42 @@
     <section id="home" class="tab-content active">
       <h2>Welcome to the Automation Practice Website</h2>
       <p>This site contains various elements for practicing Selenium web automation.</p>
+      <div class="table-container">
+        <h1>Dynamic Web Table</h1>
+        <div class="search-container">
+          <input type="text" id="searchInput" placeholder="Search by name...">
+          <button id="searchButton">Search</button>
+      </div>
+      <div class="row-selection">
+        <label for="rowsPerPage">Rows per page:</label>
+        <select id="rowsPerPage">
+            <option value="3">3</option>
+            <option value="5">5</option>
+            <option value="10">10</option>
+        </select>
+    </div>
+        <table id="dynamicTable">
+            <thead>
+                <tr>
+                    <th data-sort="name">Name</th>
+                    <th data-sort="age">Age</th>
+                    <th data-sort="salary">Salary</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be dynamically loaded here by JavaScript -->
+            </tbody>
+        </table>
+        <div class="pagination">
+            <button id="prevPage">Previous</button>
+            <span id="pageInfo">Page 1</span>
+            <button id="nextPage">Next</button>
+        </div>
+        <div class="statistics">
+            <button id="calculateAverage">Calculate Average Salary</button>
+            <p id="averageSalary">Average Salary: -</p>
+        </div>
+    </div>
     </section>
 
     <!-- Forms Tab -->
